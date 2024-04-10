@@ -8,24 +8,38 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row d-flex">
-            <div class="col-md-6 bg-secondary p-4">
-                <form action="#" class="col-md-6" name="Calculator"></form>
-                <input type="text" class="display form-control" name="display" id="display"><br>
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="7">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="8">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="9"><br><br>
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="6">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="5">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="4"><br><br>
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="3">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="2">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="1"><br><br>
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="0">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="CL">
-                <input type="button" class="btn btn-primary w-25 h-10 fs-4 me-3" value="c"><br><br>
-                <input type="button" class="btn btn-primary w-50 h-10 fs-4 me-3" value="Calculate">
+    <div class="container d-flex justify-content-center mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="#" name="Calculator" class="main">
+                    <input type="text" class="display form-control box-shadow" name="display" id="display"><br>
+                    <input type="button" class="btn btn-primary me-3" value="6">
+                    <input type="button" class="btn btn-primary me-3" value="7">
+                    <input type="button" class="btn btn-primary me-3" value="8">
+                    <input type="button" class="btn btn-primary" value="9"><br><br>
+                    <input type="button" class="btn btn-primary me-3" value="2">
+                    <input type="button" class="btn btn-primary me-3" value="3">
+                    <input type="button" class="btn btn-primary me-3" value="4">
+                    <input type="button" class="btn btn-primary" value="5"><br><br>
+                    <input type="button" class="btn btn-primary me-3" value="1">
+                    <input type="button" class="btn btn-primary me-3" value="0">
+                    <input type="button" class="btn btn-primary me-3" value="AC">
+                    <input type="button" class="btn btn-primary" value="C"><br><br>
+                    <div class="operation d-flex justify-content-between pb-3">
+                        <div class="dropdown me-3">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Operator
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">+</a></li>
+                              <li><a class="dropdown-item" href="#">-</a></li>
+                              <li><a class="dropdown-item" href="#">*</a></li>
+                              <li><a class="dropdown-item" href="#">/</a></li>
+                            </ul>
+                          </div>
+                        <input type="button" class="btn btn-primary" value="Calculate =">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

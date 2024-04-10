@@ -1,0 +1,22 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main{
+    width: 270px;
+    height: auto;
+    background-color: rgb(148, 148, 148);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: ruby-text;
+}
+
+input#display {
+    margin-bottom: 30px;
+}
+
