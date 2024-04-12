@@ -13,31 +13,31 @@
             <div class="col-md-12">
                 <form action="#" name="Calculator" class="main">
                     <input type="text" class="display form-control box-shadow" name="display" id="display"><br>
-                    <input type="button" class="btn btn-primary me-3" value="6">
-                    <input type="button" class="btn btn-primary me-3" value="7">
-                    <input type="button" class="btn btn-primary me-3" value="8">
-                    <input type="button" class="btn btn-primary" value="9"><br><br>
-                    <input type="button" class="btn btn-primary me-3" value="2">
-                    <input type="button" class="btn btn-primary me-3" value="3">
-                    <input type="button" class="btn btn-primary me-3" value="4">
-                    <input type="button" class="btn btn-primary" value="5"><br><br>
-                    <input type="button" class="btn btn-primary me-3" value="1">
-                    <input type="button" class="btn btn-primary me-3" value="0">
-                    <input type="button" class="btn btn-primary me-3" id="alclear" value="AC">
-                    <input type="button" class="btn btn-primary" value="C" onclick="backSpeace()"><br><br>
+                    <input type="button" class="btn btn-primary me-3" value="6" onclick="six()">
+                    <input type="button" class="btn btn-primary me-3" value="7" onclick="seven()">
+                    <input type="button" class="btn btn-primary me-3" value="8" onclick="eight()">
+                    <input type="button" class="btn btn-primary" value="9" onclick="nine()"><br><br>
+                    <input type="button" class="btn btn-primary me-3" value="2" onclick="two()">
+                    <input type="button" class="btn btn-primary me-3" value="3" onclick="three()">
+                    <input type="button" class="btn btn-primary me-3" value="4" onclick="four()">
+                    <input type="button" class="btn btn-primary" value="5" onclick="five()"><br><br>
+                    <input type="button" class="btn btn-primary me-3" value="1" onclick="one()">
+                    <input type="button" class="btn btn-primary me-3" value="0" onclick="zero()">
+                    <input type="button" class="btn btn-danger me-3" id="alclear" value="AC">
+                    <input type="button" class="btn btn-danger" value="C" onclick="backSpeace()"><br><br>
                     <div class="operation d-flex justify-content-between pb-3">
                         <div class="dropdown me-3">
                             <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                               Operator
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><input type="button" class="btn btn-primary m-1" value="+" onclick="document.Calculator.display.value+='+'"></li>
-                              <li><input type="button" class="btn btn-primary m-1" value="-" onclick="document.Calculator.display.value+='-'"></li>
-                              <li><input type="button" class="btn btn-primary m-1" value="*" onclick="document.Calculator.display.value+='*'"></li>
-                              <li><input type="button" class="btn btn-primary m-1" value="/" onclick="document.Calculator.display.value+='/'"></li>
+                            <ul class="dropdown-menu w-100 p-3" aria-labelledby="dropdownMenuButton1">
+                              <input type="button" class="btn btn-primary m-1" value="+" onclick="document.Calculator.display.value+='+'">
+                              <input type="button" class="btn btn-primary m-1" value="-" onclick="document.Calculator.display.value+='-'">
+                              <input type="button" class="btn btn-primary m-1" value="*" onclick="document.Calculator.display.value+='*'">
+                              <input type="button" class="btn btn-primary m-1" value="/" onclick="document.Calculator.display.value+='/'">
                             </ul>
                           </div>
-                        <input type="button" class="btn btn-primary" value="Calculate =">
+                        <input type="button" class="btn btn-primary" value="Calculate =" onclick="document.Calculator.display.value= eval(Calculator.display.value)">
                     </div>
                 </form>
             </div>
