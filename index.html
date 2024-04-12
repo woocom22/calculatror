@@ -31,10 +31,10 @@
                               Operator
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">+</a></li>
-                              <li><a class="dropdown-item" href="#">-</a></li>
-                              <li><a class="dropdown-item" href="#">*</a></li>
-                              <li><a class="dropdown-item" href="#">/</a></li>
+                              <li><input type="button" class="btn btn-primary m-1" value="+" onclick="document.Calculator.display.value+='+'"></li>
+                              <li><input type="button" class="btn btn-primary m-1" value="-" onclick="document.Calculator.display.value+='-'"></li>
+                              <li><input type="button" class="btn btn-primary m-1" value="*" onclick="document.Calculator.display.value+='*'"></li>
+                              <li><input type="button" class="btn btn-primary m-1" value="/" onclick="document.Calculator.display.value+='/'"></li>
                             </ul>
                           </div>
                         <input type="button" class="btn btn-primary" value="Calculate =">
